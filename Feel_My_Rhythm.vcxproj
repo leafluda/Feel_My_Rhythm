@@ -142,6 +142,7 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BindTexture.hpp" />
     <ClInclude Include="GGameManager.hpp" />
     <ClInclude Include="GNote1.hpp" />
     <ClInclude Include="GNote2.hpp" />
@@ -151,6 +152,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="lena_gray.bmp" />
+    <Image Include="press_space.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

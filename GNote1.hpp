@@ -9,21 +9,19 @@
 #include <String>
 #include <random>
 
-
 #pragma comment(lib, "OpenGL32")
 
-
+using namespace std;
 namespace G_Engine
 {
 
 
     class GNote1
     {
-    private: float Ny = 0.9f;
+    private: 
+    public: float Ny = 0.9f;
 
-    public:
 
-        
 
 
     public:
@@ -44,7 +42,16 @@ namespace G_Engine
 
         void Down()
         {
-            Ny = Ny - 0.01f;
+            Ny = Ny - 0.02f;
+        }
+        void restate()
+        {
+            Ny = 0.9f;
+        }
+        void inbox()
+        {
+           
+                
         }
 
     };

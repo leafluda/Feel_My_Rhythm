@@ -12,7 +12,7 @@
 
 #pragma comment(lib, "OpenGL32")
 
-
+using namespace std;
 namespace G_Engine
 {
     
@@ -21,10 +21,10 @@ namespace G_Engine
     {
 
     private:
-        float Ny = 0.9f;
+        
     public:
+        float Ny = 0.9f;
 
-       
 
 
     public:
@@ -46,8 +46,17 @@ namespace G_Engine
 
         void Down()
         {
-            Ny = Ny - 0.001f;
+            Ny = Ny - 0.02f;
         }
 
+        void restate()
+        {
+            Ny = 0.9f;
+        }
+
+        void inbox()
+        {
+           
+        }
     };
 }

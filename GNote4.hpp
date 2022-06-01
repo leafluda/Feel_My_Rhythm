@@ -12,7 +12,7 @@
 
 #pragma comment(lib, "OpenGL32")
 
-
+using namespace std;
 namespace G_Engine
 {
 
@@ -24,7 +24,7 @@ namespace G_Engine
     public:
 
         float Ny = 0.9f;
-        float tlqkf = 0;
+     
 
     public:
         GNote4() {}
@@ -43,25 +43,19 @@ namespace G_Engine
 
         void Down()
         {
-            std::random_device rd;
-            std::mt19937 gen(rd());
-            std::uniform_int_distribution<int> dis(0, 3);
 
+            Ny = Ny - 0.02f;
 
+        }
 
-            switch (dis(gen))
-            {
-            case 0: tlqkf = 0.01f;
-                break;
-            case 1: tlqkf = 0.005f;
-                break;
-            case 2: tlqkf = 0.001f;
-                break;
-            case 3: tlqkf = 0.0005f;
-                break;
-            }
+        void restate()
+        {
+            Ny = 0.9f;
+        }
 
-            Ny = Ny - tlqkf;
+        void inbox()
+        {
+           
         }
 
     };
